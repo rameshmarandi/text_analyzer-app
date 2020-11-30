@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-CuOF+2SnTUfTwSZjCXf01h7uYhfOBuxIhGKPbfEJ3+FqH/s6cIFN9bGr1HmAg4fQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Text Analyzer</title>
+  </head>
+  <body>
+    <div class="container main_div">
+        <!-- Content here -->
+       
+          <div class="mt-3">
+            <label for="exampleFormControlTextarea1" class="form-label h1 mb-3 align-items-center mx-auto">Enter Your Text</label>
+            <textarea class="form-control inputdata" id="inputdata" rows="3" >
+              
+            </textarea>
+           
+            <button type="button" class="btn  btn-info btn-lg mb-3 mt-4 mx-auto"onclick="getInfo()" >Generate Info</button>
+
+          </div>
+
+          <div id = "result_data">
+              <div class="row">
+                  <div class="col-md-3 col-6 gy-4">
+                    <div class="card">
+                        <div class="card-header text-center primary">
+                          Vowels
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center" id="vowel">0</h5>
+                                                    
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-md-3 col-6 gy-4">
+                    <div class="card">
+                        <div class="card-header text-center primary">
+                          Consonents
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center" id="consonent">0</h5>
+                                                    
+                        </div>
+                      </div>
+                  </div>
+
+                  <div class="col-md-3 col-6 gy-4">
+                    <div class="card">
+                        <div class="card-header text-center primary">
+                          Sentences
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center" id="sent">0</h5>
+                                                    
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-md-3 col-6 gy-4">
+                    <div class="card">
+                        <div class="card-header text-center primary">
+                          Words
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center" id="word">0</h5>
+                                                    
+                        </div>
+                      </div>
+                  </div>
+                  
+              </div>
+
+              <div class="row ">
+                <div class="col-md-3 col-6 gy-4">
+                  <div class="card">
+                      <div class="card-header text-center primary">
+                        Digits
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title text-center" id="digit">0</h5>
+                                                  
+                      </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 gy-4">
+                  <div class="card">
+                      <div class="card-header text-center primary">
+                        UppterCase
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title text-center" id="uCase">0</h5>
+                                                  
+                      </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-6 gy-4">
+                  <div class="card">
+                      <div class="card-header text-center primary">
+                        LowerCase
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title text-center" id="lCase">0</h5>
+                                                  
+                      </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 gy-4">
+                  <div class="card">
+                      <div class="card-header text-center primary">
+                     Space
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title text-center" id="space">0</h5>
+                                                  
+                      </div>
+                    </div>
+                </div>
+                
+            </div>
+          </div>
+          <footer class="align-items-center text-center p-5">Created by RameshTechnical © <span id="demo"></span>
+          <a href="https://github.com/rameshmarandi" target="_blank"><i class="fab fa-github-square ml-2"></i></a>
+          <a href="https://www.linkedin.com/in/ramesh-marandi-099142168/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          </footer>
+    </div>
+
+    <!-- External Script Tag -->
+    <script src="index.js"></script>
+  <script>
+    
+  var d = new Date();
+  var n = d.getFullYear();
+  document.getElementById("demo").innerHTML = n;
+
+  </script>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-popRpmFF9JQgExhfw5tZT4I9/CI5e2QcuUZPOVXb1m7qUmeR2b50u+YFEYe1wgzy" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper.js and Bootstrap JS
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-t6I8D5dJmMXjCsRLhSzCltuhNZg6P10kE0m0nAncLUjH6GeYLhRU1zfLoW3QNQDF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

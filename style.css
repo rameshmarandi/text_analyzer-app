@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Roboto:ital,wght@0,500;1,300;1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nerko One', cursive;
+    font-family: 'Roboto', sans-serif;
+    
+
+    
+}
+body{
+    background:#c8d6e5;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+}
+.h1{
+    color: #895fc8;
+}
+.card .card-title{
+    -webkit-box-shadow: -1px -1px 9px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: -1px -1px 9px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:  -1px -1px 9px 0px rgba(50, 50, 50, 0.75);
+    border-top-left-radius: 15px;
+}
+
+.card-header{
+    font-size: 1.5rem;
+    color: #0984e3;
+    background:#130f40 ;
+}
+.card-title{
+    font-size: 3rem;
+}
+footer{
+    margin-left: auto;
+    width:100%;
+   margin-top: auto;
+}
+footer .fab {
+    font-size: 2rem;
+    margin-left: 15px;
+    color: blue;
+    cursor: pointer;
+}
+.fab:hover{
+ 
+    color: #2f3542;
+    transition: all 0.5s linear;
+}
